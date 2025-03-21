@@ -7,4 +7,4 @@ Route::get("/test", function(){
   return "el backend funciona correctamente";
 });
 
-Route::get("/product", [ProductController::class, "get"]);
+Route::get("/product/{id?}", [ProductController::class, "get"]);
